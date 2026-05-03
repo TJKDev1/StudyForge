@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyForge — Slim Studeren</title>
+    <meta
+      name="description"
+      content="Modulair studieplatform met spaced repetition, interleaving en confidence-based learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <nav id="sidebar" class="sidebar" aria-label="Navigatie">
+        <div class="sidebar__header">
+          <h1 class="sidebar__title">
+            Study<br /><span class="sidebar__accent">Forge</span>
+          </h1>
+        </div>
+        <div class="sidebar__nav" id="nav-container"></div>
+        <div class="sidebar__footer">
+          <button id="reset-progress" class="btn btn--ghost btn--sm">
+            Voortgang wissen
+          </button>
+        </div>
+      </nav>
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Menu openen"
+        aria-controls="sidebar"
+        aria-expanded="false"
+        type="button"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+      <main id="content" class="content" tabindex="-1"></main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* ============================================
+   DESIGN TOKENS — Minimal Mono + Coral
+   ============================================ */
+
+:root {
+  /* --- Surface (true neutral, no blue tint) --- */
+  --surface-0: oklch(12% 0 0);
+  --surface-1: oklch(16% 0.003 0);
+  --surface-2: oklch(21% 0.003 0);
+  --surface-3: oklch(27% 0.003 0);
+
+  /* --- Text (warm neutral) --- */
+  --text-primary: oklch(93% 0.005 60);
+  --text-secondary: oklch(62% 0.005 60);
+  --text-tertiary: oklch(44% 0.005 60);
+
+  /* --- Accent: Coral (single pop) --- */
+  --accent: oklch(72% 0.16 25);
+  --accent-dim: oklch(55% 0.11 25);
+  --accent-surface: oklch(20% 0.04 25);
+
+  /* --- Course accents (subtle coral variations) --- */
+  --accent-data: oklch(72% 0.16 25);
+  --accent-data-dim: oklch(55% 0.11 25);
+  --accent-data-surface: oklch(20% 0.04 25);
+  --accent-ethiek: oklch(72% 0.14 18);
+  --accent-ethiek-dim: oklch(55% 0.10 18);
+  --accent-ethiek-surface: oklch(20% 0.035 18);
+
+  /* --- Feedback --- */
+  --success: oklch(72% 0.14 148);
+  --success-surface: oklch(20% 0.03 148);
+  --error: oklch(68% 0.17 28);
+  --error-surface: oklch(20% 0.04 28);
+  --warning: oklch(75% 0.13 70);
+  --warning-surface: oklch(20% 0.03 70);
+
+  /* --- Typography --- */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.7;
+
+  /* --- Spacing --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* --- Radius --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* --- Transitions --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  /* --- Layout --- */
+  --sidebar-width: 280px;
+  --content-max: 800px;
+}
