@@ -2,6 +2,7 @@
 // HOME — Dashboard with all courses
 // ============================================
 
+import heroImageUrl from "../assets/studyforge-hero.png";
 import { daysUntil, formatDaysUntil } from "../components/common";
 import { iconClock, iconFlame, iconRefresh } from "../components/icons";
 import { getCourses } from "../core/registry";
@@ -23,10 +24,22 @@ export function renderHome(content: HTMLElement): void {
 	page.className = "page";
 
 	page.innerHTML = `
-    <div class="page__header">
-      <h2 class="page__title">StudyForge</h2>
-      <p class="page__desc">Kies een vak om te beginnen, of start een reviewsessie.</p>
-    </div>
+    <section class="home-hero" aria-labelledby="home-title">
+      <img
+        class="home-hero__image"
+        src="${heroImageUrl}"
+        alt=""
+        width="1792"
+        height="1024"
+        decoding="async"
+        fetchpriority="high"
+      />
+      <div class="home-hero__content">
+        <p class="home-hero__eyebrow">Slim studeren · SRS · Interleaving</p>
+        <h2 id="home-title" class="home-hero__title">StudyForge</h2>
+        <p class="home-hero__desc">Smeed je kennis met gerichte flashcards, reviewsessies en voortgang per vak.</p>
+      </div>
+    </section>
 
     ${
 			state.studyStreak > 0
