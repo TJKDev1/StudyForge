@@ -6,6 +6,8 @@ import "./styles/tokens.css";
 import "./styles/base.css";
 import "./styles/components.css";
 
+import logoUrl from "./assets/studyforge-logo.png";
+
 // Register all courses (side effect import)
 import "./courses/index";
 
@@ -24,6 +26,11 @@ const navContainer = document.getElementById("nav-container")!;
 const menuToggle = document.getElementById("menu-toggle")!;
 const sidebar = document.getElementById("sidebar")!;
 const resetBtn = document.getElementById("reset-progress")!;
+const appLogo = document.getElementById("app-logo") as HTMLImageElement | null;
+
+if (appLogo) {
+	appLogo.src = logoUrl;
+}
 
 // === SIDEBAR MOBILE ===
 

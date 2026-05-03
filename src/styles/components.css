@@ -65,6 +65,22 @@
 	padding: var(--space-8) var(--space-6) var(--space-6);
 }
 
+.sidebar__brand {
+	display: flex;
+	align-items: center;
+	gap: var(--space-3);
+}
+
+.sidebar__logo {
+	width: 52px;
+	height: 52px;
+	border-radius: var(--radius-lg);
+	object-fit: cover;
+	box-shadow:
+		0 0 0 1px var(--surface-3),
+		0 10px 30px oklch(72% 0.16 25 / 0.16);
+}
+
 .sidebar__title {
 	font-size: var(--text-xl);
 	font-weight: var(--weight-extrabold);
@@ -821,7 +837,11 @@
 			oklch(12% 0 0 / 0.42) 58%,
 			oklch(12% 0 0 / 0.12) 100%
 		),
-		radial-gradient(circle at 35% 45%, oklch(72% 0.16 25 / 0.16), transparent 34%);
+		radial-gradient(
+			circle at 35% 45%,
+			oklch(72% 0.16 25 / 0.16),
+			transparent 34%
+		);
 }
 
 .home-hero__image {
@@ -998,7 +1018,11 @@
 				oklch(12% 0 0 / 0.78) 42%,
 				oklch(12% 0 0 / 0.42) 100%
 			),
-			radial-gradient(circle at 50% 32%, oklch(72% 0.16 25 / 0.16), transparent 38%);
+			radial-gradient(
+				circle at 50% 32%,
+				oklch(72% 0.16 25 / 0.16),
+				transparent 38%
+			);
 	}
 
 	.home-hero__image {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudyForge — Slim Studeren</title>
+    <link rel="icon" type="image/png" href="/src/assets/studyforge-logo.png" />
     <meta
       name="description"
       content="Modulair studieplatform met spaced repetition, interleaving en confidence-based learning."
@@ -19,9 +20,12 @@
     <div id="app">
       <nav id="sidebar" class="sidebar" aria-label="Navigatie">
         <div class="sidebar__header">
-          <h1 class="sidebar__title">
-            Study<br /><span class="sidebar__accent">Forge</span>
-          </h1>
+          <div class="sidebar__brand">
+            <img id="app-logo" class="sidebar__logo" alt="" width="48" height="48" />
+            <h1 class="sidebar__title">
+              Study<br /><span class="sidebar__accent">Forge</span>
+            </h1>
+          </div>
         </div>
         <div class="sidebar__nav" id="nav-container"></div>
         <div class="sidebar__footer">
