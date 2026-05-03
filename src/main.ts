@@ -6,7 +6,7 @@ import "./styles/tokens.css";
 import "./styles/base.css";
 import "./styles/components.css";
 
-import logoUrl from "./assets/studyforge-logo.png";
+import logoUrl from "./assets/studyforge-logo-transparent.png";
 
 // Register all courses (side effect import)
 import "./courses/index";

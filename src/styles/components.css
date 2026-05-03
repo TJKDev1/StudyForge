@@ -72,13 +72,10 @@
 }
 
 .sidebar__logo {
-	width: 52px;
-	height: 52px;
-	border-radius: var(--radius-lg);
-	object-fit: cover;
-	box-shadow:
-		0 0 0 1px var(--surface-3),
-		0 10px 30px oklch(72% 0.16 25 / 0.16);
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	filter: drop-shadow(0 10px 22px oklch(72% 0.16 25 / 0.22));
 }
 
 .sidebar__title {
