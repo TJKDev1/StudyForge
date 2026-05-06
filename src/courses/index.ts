@@ -10,6 +10,8 @@
 import { registerCourse } from '../core/registry';
 import { dataIICourse } from './data-ii/manifest';
 import { ethiekRechtCourse } from './ethiek-recht/manifest';
+import { programmerenIICourse } from './programmeren-ii/manifest';
 
 registerCourse(dataIICourse);
 registerCourse(ethiekRechtCourse);
+registerCourse(programmerenIICourse);
