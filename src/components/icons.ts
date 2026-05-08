@@ -13,6 +13,7 @@ const sf = (d: string, size = 20) =>
 // --- Course icons ---
 export const iconDatabase = s('<path d="M3 5c0-1.7 3.1-3 7-3s7 1.3 7 3"/><ellipse cx="10" cy="5" rx="7" ry="3"/><path d="M3 5v10c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/><path d="M3 10c0 1.7 3.1 3 7 3s7-1.3 7-3"/>');
 export const iconScale = s('<path d="M10 2v16"/><path d="M3 6l7-4 7 4"/><path d="M1 12a5 5 0 004 0"/><path d="M15 12a5 5 0 004 0"/><path d="M3 6l-2 6c0 1.1 1.8 2 3 2s3-.9 3-2L5 6"/><path d="M15 6l-2 6c0 1.1 1.8 2 3 2s3-.9 3-2l-2-6"/>');
+export const iconCalculator = s('<rect x="3" y="2" width="14" height="16" rx="2"/><rect x="5" y="4" width="10" height="4" rx="1"/><circle cx="7" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="13" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="7" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="13" cy="15" r="1" fill="currentColor" stroke="none"/>');
 
 // --- Section icons ---
 export const iconBook = s('<path d="M2 4c2-1 4-1 8 1 4-2 6-2 8-1v13c-2-1-4-1-8 1-4-2-6-2-8-1V4z"/><path d="M10 5v13"/>');
